@@ -352,7 +352,7 @@ button.white{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url("/banner/b1.jpg");
+    background-image: url("/banner/b2.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
 }
@@ -363,17 +363,16 @@ button.white{
 }
 #newsletter p{
     font-size: 18px;
+    padding-top: 10px;
     font-weight: 600;
     color: rgb(205, 247, 236);
 }
 #newsletter span{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(230, 157, 0);
 }
-#newsletter .news-text{
-    padding: 10px;
-}
+
 #newsletter .form{
     display: flex;
     justify-content: center;
