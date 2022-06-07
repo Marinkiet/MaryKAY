@@ -348,6 +348,7 @@ button.white{
     font-size: 18px;
 }
 #newsletter{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -400,3 +401,74 @@ button.white{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+footer p, address{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+    color: rgb(105, 105, 105);
+
+}
+footer a{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    padding-right: 6px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+footer .follow i:nth-child(1){
+    color: #3b5998;
+}
+footer .follow i:nth-child(2){
+    color: #bb0000;
+}
+footer .follow i:nth-child(3){
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+footer .follow i:nth-child(4){
+    color: #cb2027;
+}
+footer .follow i:nth-child(5){
+    color: #111111;
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+footer .install .row img{
+    border: 1px solid rgb(24, 124, 99);
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer a:hover{
+    color: rgb(24, 124, 99);
+}
+footer i:hover{
+    transform: scale(1.7);
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
