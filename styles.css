@@ -83,6 +83,9 @@ body{
     display: none;
     align-items: center;
 }
+#close{
+    display: none;
+}
 #hero{
     background-image: url("./banner/b21.jpg");
     height: 90vh;
@@ -504,5 +507,16 @@ footer .copyright{
     #burger i{
         padding-left: 20px;
         color: rgb(0, 0, 0);
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:13px;
+        left: 30px;
+        font-size: 20px;
+        color: black;
+    }
+    #no-cart{
+        display: none;
     }
 }
