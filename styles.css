@@ -46,6 +46,10 @@ body{
     top: 0;
     left: 0;
 }
+.shopbtn{
+    text-decoration: none;
+    color:black;
+}
 #nav-bar{
     display: flex;
     align-items: center;
@@ -610,9 +614,27 @@ footer .copyright{
     #single-product-details .single-prod-details {
         width: 100%;
     }
+    /***********blog page*****************/
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-box {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    } 
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
 }
 /**************Shop Page**************/
-#shop-header{
+#shop-header,
+#blog-header{
     background-image: url("/banner/b1.jpg");
     width: 100%;
     height: 40vh;
@@ -623,8 +645,8 @@ footer .copyright{
     flex-direction: column;
     padding: 14px;
 }
-#shop-header h2,
-#shop-header p {
+#shop-header,#blog-header h2,
+#shop-header,#blog-header p {
     color: rgba(255, 255, 255,0.96);
 }
 #pagination{
@@ -694,4 +716,64 @@ footer .copyright{
 }
 #single-product-details .single-prod-details span{
     line-height: 25px;
+}
+/************Blog**********************/
+
+#blog-header.blogs-header{
+    background-image: url("/banner/b19.jpg");
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details a{
+    position: relative;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    right: -60px;
+}
+#blog .blog-details a:hover{
+    color: rgb(47, 133, 111);
+}
+#blog .blog-details a:hover::after{
+    background-color: rgb(47, 133, 111);
+
+}
+#blog .blog-box h1{
+    position: absolute;
+    top: -45px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(202, 213, 223);
+    z-index: -1;
 }
