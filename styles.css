@@ -481,7 +481,7 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
-
+/************Medium Screen*******************/
 @media (max-width:799px) {
     .section-padding {
         padding: 40px 40px;
@@ -556,7 +556,15 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+    /*Contact page******************/
+    #contact-form-details {
+        padding: 40px;
+    }
+    #contact-form-details form {
+        width: 50%
+    }
 }
+/******************Small Screen**********************/
 @media (max-width:477px) {
     .section-padding{
         padding: 20px;
@@ -652,11 +660,34 @@ footer .copyright{
         width: 100%;
         margin: 38px 0 20px 20px;
     }
+    /***************Contact Page*****************/
+    #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .cont-details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details map{
+        width: 100%;
+    }
+    #contact-form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #contact-form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    
 }
 /**************Shop Page**************/
 #shop-header,
 #blog-header,
-#about-header{
+#about-header,
+#contact-header{
     background-image: url("/banner/b1.jpg");
     width: 100%;
     height: 40vh;
@@ -667,8 +698,8 @@ footer .copyright{
     flex-direction: column;
     padding: 14px;
 }
-#shop-header h2,#blog-header h2,#about-header h2,
-#shop-header p,#blog-header p ,#about-header p{
+#shop-header h2,#blog-header h2,#about-header h2,#contact-header h2,
+#shop-header p,#blog-header p ,#about-header p,#contact-header p{
     color: rgba(255, 255, 255,0.96);
 }
 #pagination{
@@ -827,4 +858,95 @@ footer .copyright{
     height: 100%;
     border-radius: 30px;
 
+}
+/**************contact us*******************/
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .cont-details{
+    width: 40%;
+}
+#contact-details .cont-details span,
+#contact-form-details form span{
+    font-size: 16px;
+}
+#contact-details .cont-details h2,
+#contact-form-details form h2{
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .cont-details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .cont-details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .cont-details i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .cont-details p{
+    margin: 0;
+    font-size: 16px;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#contact-form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 60px;
+    border: 1px solid gray;
+}
+#contact-form-details form{
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#contact-form-details form input,
+#contact-form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid rgb(150, 149, 149);
+}
+#contact-form-details form button{
+    background-color: rgb(24, 124, 99);
+    color: white;
+}
+#contact-form-details .team div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#contact-form-details .team div img{
+    width: 55px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#contact-form-details .team div p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 25px;
+}
+#contact-form-details .team div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
 }
